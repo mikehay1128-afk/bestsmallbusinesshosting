@@ -12,6 +12,14 @@
 <meta property="og:url" content="https://www.bestsmallbusinesshosting.com/">
 <link rel="canonical" href="https://www.bestsmallbusinesshosting.com/" />
 
+<!-- ============================================================
+     FAVICON — uploaded to repo root as favicon.svg + favicon.zip
+     ============================================================ -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -1349,17 +1357,17 @@ body {
       <div class="cl-card">
         <h3>CPP Benefits Calculator</h3>
         <p>Estimate your Canada Pension Plan monthly payment at age 60, 65 or 70 with breakeven analysis.</p>
-        <a href="https://www.cppcalculation.ca/" target="_blank" rel="noopener" class="cl-btn">CPP Calculator →</a>
+        <a href="https://cppcalculation.ca/" target="_blank" rel="noopener" class="cl-btn">CPP Calculator →</a>
       </div>
       <div class="cl-card">
         <h3>TFSA Contribution Room Calculator</h3>
         <p>Calculate your exact Tax-Free Savings Account contribution room and carryforward for 2026.</p>
-        <a href="https://www.tfsaroomcalculator.ca/" target="_blank" rel="noopener" class="cl-btn">TFSA Calculator →</a>
+        <a href="https://www.tfsacontributionroom.ca/" target="_blank" rel="noopener" class="cl-btn">TFSA Calculator →</a>
       </div>
       <div class="cl-card">
         <h3>FHSA Contribution Room Calculator</h3>
         <p>Calculate your First Home Savings Account contribution room, lifetime limit and tax deduction.</p>
-        <a href="https://www.fhsacalculator.ca/" target="_blank" rel="noopener" class="cl-btn">FHSA Calculator →</a>
+        <a href="https://www.financialpipeline.com/calculators/fhsa-contribution-room-calculator/" target="_blank" rel="noopener" class="cl-btn">FHSA Calculator →</a>
       </div>
     </div>
   </div>
@@ -1379,7 +1387,6 @@ body {
     </div>
     <div class="footer-bottom">
       <p>© 2026 bestsmallbusinesshosting.com — Quiz results are recommendations only. Not affiliated with any hosting provider.</p>
-      
     </div>
   </div>
 </footer>
@@ -1421,8 +1428,6 @@ body {
       <p>This site contains affiliate links to third-party hosting providers. When you click these links you will be directed to third-party websites governed by their own privacy policies. We have no control over and accept no responsibility for the privacy practices of these third parties.</p>
       <h3>Cookies</h3>
       <p>This site may use cookies for analytics and advertising purposes through Google AdSense. You can control cookie settings through your browser preferences.</p>
-      
-      
     </div>
   </div>
 </div>
@@ -1446,8 +1451,6 @@ body {
       <p>This site contains links to third-party hosting providers. We are not responsible for the content, pricing, or services of these third parties. Your use of third-party sites is governed by their own terms and conditions.</p>
       <h3>Changes to Terms</h3>
       <p>We reserve the right to modify these terms at any time. Continued use of the site after changes constitutes acceptance of the revised terms.</p>
-      
-      
     </div>
   </div>
 </div>
@@ -1467,8 +1470,6 @@ body {
       <p>In accordance with the Federal Trade Commission guidelines, we disclose that this site contains affiliate links. This disclosure is provided to ensure full transparency with our users.</p>
       <h3>Thank You for Your Support</h3>
       <p>Affiliate commissions help us maintain this free tool and keep it up to date. We appreciate your support and always strive to provide honest, accurate recommendations.</p>
-      
-      
     </div>
   </div>
 </div>
@@ -1588,7 +1589,6 @@ function updateProgress() {
 function showResults() {
   if (!answers[7]) return;
 
-  // Score each host
   const scored = Object.entries(HOSTS).map(([key, host]) => {
     let score = 0;
     Object.values(answers).forEach(ans => {
@@ -1597,7 +1597,6 @@ function showResults() {
     return { key, host, score };
   }).sort((a, b) => b.score - a.score);
 
-  // Hide questions, show results
   document.getElementById('quiz-body').style.display = 'none';
   document.getElementById('quiz-progress').style.display = 'none';
   const resultsWrap = document.getElementById('results-wrap');
